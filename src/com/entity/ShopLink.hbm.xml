@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.entity.ShopLink" table="t_shop"
+		dynamic-update="true">
+		<id name="id" type="java.lang.String">
+			<column name="ID" />
+		</id>
+		<property name="shop_name" type="java.lang.String">
+			<column name="SHOP_NAME" />
+		</property>
+		<property name="shop_link" type="java.lang.String">
+			<column name="SHOP_LINK" />
+		</property>
+		<property name="create_time" type="java.util.Date">
+			<column name="CREATE_TIME" />
+		</property>
+		<property name="update_time" type="java.util.Date">
+			<column name="UPDATE_TIME" />
+		</property>
+		<property name="shop_type" type="java.lang.String">
+			<column name="SHOP_TYPE" />
+		</property>
+		<property name="company_name" type="java.lang.String">
+			<column name="COMPANY_NAME" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+		<property name="corporat_account" type="java.lang.String">
+			<column name="CORPORAT_ACCOUNT" />
+		</property>
+		<property name="wang_wang" type="java.lang.String">
+			<column name="WANG_WANG" />
+		</property>
+		<property name="shop_address" type="java.lang.String">
+			<column name="SHOP_ADDRESS" />
+		</property>
+		<property name="main_products" type="java.lang.String">
+			<column name="MAIN_PRODUCTS" />
+		</property>
+		<property name="sales_volume" type="java.lang.String">
+			<column name="SALES_VOLUME" />
+		</property>
+		<property name="commodity_num" type="java.lang.String">
+			<column name="COMMODITY_NUM" />
+		</property>
+		<property name="consumer_protection" type="java.lang.String">
+			<column name="CONSUMER_PROTECTION" />
+		</property>
+			<property name="shop_level" type="java.lang.String">
+			<column name="SHOP_LEVEL" />
+		</property>
+		<property name="logo_url" type="java.lang.String">
+			<column name="LOGO_URL" />
+		</property>
+        <property name="category" type="java.lang.String">
+			<column name="CATEGORY" />
+		</property>
+		<property name="jinPaiMaiJia" type="java.lang.String">
+			<column name="JINPAIMAIJIA" />
+		</property>
+	</class>
+</hibernate-mapping>

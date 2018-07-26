@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.TanJi" table="t_tanji" dynamic-update="true">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />          
+        </id>
+         <property name="shopName" type="java.lang.String">
+            <column name="SHOPNAME" /> 
+        </property>
+        <property name="companyName" type="java.lang.String">
+            <column name="COMPANYNAME" /> 
+        </property>
+        <property name="phone" type="java.lang.String">
+            <column name="PHONE" /> 
+        </property>
+        <property name="contacts" type="java.lang.String">
+            <column name="CONTACTS" /> 
+        </property>
+        <property name="label" type="java.lang.String">
+            <column name="LABEL" /> 
+        </property>
+       <property name="source" type="java.lang.String">
+            <column name="SOURCE" /> 
+        </property>
+        <property name="createTime" type="java.util.Date">
+			<column name="CREATETIME" />
+		</property>
+    </class>
+</hibernate-mapping>

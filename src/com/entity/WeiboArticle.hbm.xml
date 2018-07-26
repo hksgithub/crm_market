@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.WeiboArticle" table="t_weibo_article_day_report">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="native" /> 
+        </id>
+        <property name="uid" type="java.lang.String">
+            <column name="UID" /> 
+        </property>
+        <property name="day" type="java.lang.String">
+            <column name="DAY" /> 
+        </property>
+        <property name="public_num" type="java.lang.Integer">
+            <column name="PUBLIC_NUM" /> 
+        </property> 
+        <property name="create_time" type="java.util.Date">
+            <column name="CREATE_TIME" /> 
+        </property>
+    </class>
+</hibernate-mapping>

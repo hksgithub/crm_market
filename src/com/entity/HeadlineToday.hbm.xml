@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.HeadlineToday" table="t_headline_today_day_report">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="native" /> 
+        </id>
+         <property name="uid" type="java.lang.String">
+            <column name="UID" /> 
+        </property>
+        <property name="day" type="java.lang.String">
+            <column name="DAY" /> 
+        </property>
+        <property name="public_num" type="java.lang.Integer">
+            <column name="PUBLIC_NUM" /> 
+        </property>
+        <property name="read_num" type="java.lang.Integer">
+            <column name="READ_NUM" /> 
+        </property>
+        <property name="comment_num" type="java.lang.Integer">
+            <column name="COMMENT_NUM" /> 
+        </property>
+        <property name="collection_num" type="java.lang.Integer">
+            <column name="COLLECTION_NUM" /> 
+        </property>
+        <property name="care_num" type="java.lang.Integer">
+            <column name="CARE_NUM" /> 
+        </property>
+        <property name="cancel_num" type="java.lang.Integer">
+            <column name="CANCEL_NUM" /> 
+        </property>
+        <property name="fans_num" type="java.lang.Integer">
+            <column name="FANS_NUM" /> 
+        </property>
+        <property name="forwarding_num" type="java.lang.Integer">
+            <column name="FORWARDING_NUM" /> 
+        </property>
+        <property name="create_time" type="java.util.Date">
+            <column name="CREATE_TIME" /> 
+        </property>
+       
+    </class>
+</hibernate-mapping>

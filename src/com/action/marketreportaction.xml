@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="marketreport" extends="struts-default" namespace="/">
+		<action name="showMarketReport" class="com.action.MarketReportAction" method="showMarketReport">
+ 			 <result name="success">
+ 			 	/jsp/marketreportaction/marketreportaction.jsp
+ 			 </result>
+ 			 
+		</action>	
+	</package>
+	
+ 	<package name="getMarketReportData" extends="json-default" namespace="/">
+	   <action name="getMarketReportData" class="com.action.MarketReportAction" method="getMarketReportData">
+			<result type="json">
+                <param name="root">jsonData</param>     
+            </result>  
+	   </action>
+		
+	</package>
+	
+	<package name="getMarketExcel" extends="json-default" namespace="/">
+	   <action name="getMarketExcel" class="com.action.MarketReportAction" method="getMarketExcel">
+			<result type="json">
+                <param name="root">jsonData</param>     
+            </result>  
+	   </action>	
+	</package>
+	
+</struts>    

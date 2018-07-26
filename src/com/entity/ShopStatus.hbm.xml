@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.entity.ShopStatus" table="t_shop_status" dynamic-update="true">
+		<id name="id" type="java.lang.String">
+			<column name="ID" />
+		</id>
+		<property name="word" type="java.lang.String">
+			<column name="WORD" />
+		</property>
+		<property name="status" type="java.lang.Integer">
+			<column name="STATUS" />
+		</property>
+		<property name="create_time" type="java.util.Date">
+			<column name="CREATE_TIME" />
+		</property>
+			<property name="runing" type="java.lang.Integer">
+			<column name="RUNING" />
+		</property>
+		<property name="end_time" type="java.util.Date">
+			<column name="END_TIME" />
+		</property>
+	</class>
+</hibernate-mapping>

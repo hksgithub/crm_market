@@ -1,0 +1,229 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="json-default" namespace="/">
+		<!-- 微博文章 -->
+		<action name="isWeiboArticle"
+			class="com.action.WeiboArticleAction" method="isWeiboArticle">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<!-- 微博粉丝 -->
+		<action name="isWeiboFans" class="com.action.WeiboFansAction"
+			method="isWeiboFans">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<!-- 微博评论、点赞 -->
+		<action name="isWeiboPraise"
+			class="com.action.WeiboPraiseAction" method="isWeiboPraise">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+
+		<!-- 净增关注、累计粉丝数 -->
+		<action name="isPublicNumberFans"
+			class="com.action.PublicNumberAction" method="isPublicNumberFans">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<!-- 发文量 -->
+		<action name="isPublicNumberArticle"
+			class="com.action.PublicNumberAction" method="isPublicNumberArticle">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<!-- 阅读、收藏数 -->
+		<action name="isPublicNumberRead"
+			class="com.action.PublicNumberAction" method="isPublicNumberRead">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+
+		<!-- 千牛 -->
+		<action name="isQianniu" class="com.action.QianniuAction"
+			method="isQianniu">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="isQianniuRead" class="com.action.QianniuAction"
+			method="isQianniuRead">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="isQianniuFans" class="com.action.QianniuAction"
+			method="isQianniuFans">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+
+		<!-- 阅读量数据处理 -->
+		<action name="isSohuRead" class="com.action.SohuAction"
+			method="isSohuRead">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<!-- 发文量数据处理 -->
+		<action name="isSohuArticle" class="com.action.SohuAction"
+			method="isSohuArticle">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+
+		<!-- 头条 -->
+		<action name="isHeadlineToday"
+			class="com.action.HeadlineTodayAction" method="isHeadlineToday">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<action name="headlineTodayForwarding"
+			class="com.action.HeadlineTodayAction"
+			method="headlineTodayForwarding">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<action name="headlineTodayFans"
+			class="com.action.HeadlineTodayAction" method="headlineTodayFans">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<action name="isTmallLicense" class="tmallLicenseAction"
+			method="isTmallLicense">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="isShopTurnover" class="businessStaffAction"
+			method="isShopTurnover">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="isShopData" class="shopLinkAction"
+			method="isShopData">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="upSearchWordStatus" class="shopLinkAction"
+			method="upSearchWordStatus">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="findSearchWordStatus" class="shopLinkAction"
+			method="findSearchWordStatus">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="findShopData" class="shopLinkAction"
+			method="findShopData">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="upShopData" class="shopLinkAction"
+			method="upShopData">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="getShopName" class="shopLinkAction"
+			method="getShopName">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="getTaoShop" class="shopLinkAction"
+			method="getTaoShop">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="upShopRate" class="shopLinkAction"
+			method="upShopRate">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="isSearchWord" class="shopLinkAction"
+			method="isSearchWord">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="findSearchWord" class="shopLinkAction"
+			method="findSearchWord">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<!-- 探迹操作 -->
+		<action name="getTanJiData" class="com.action.TanJiAction"
+			method="getTanJiData">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<action name="removeTanJiData" class="com.action.TanJiAction"
+			method="removeTanJiData">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<action name="findTanJiData" class="com.action.TanJiAction"
+			method="findTanJiData">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+
+		<!-- 猪八戒 -->
+		<action name="saveBaJieKeyWord" class="com.action.BaJieAction"
+			method="saveBaJieKeyWord">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="saveBaJieDailyCost"
+			class="com.action.BaJieAction" method="saveBaJieDailyCost">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		
+		<!-- 市场中心周报推广数据 -->
+		<action name="saveAdCost"
+			class="com.action.MarketAdSpreadCostAction" method="saveAdCost">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+</struts>

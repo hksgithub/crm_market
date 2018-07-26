@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.BaJieDailyCost" table="t_bajie_daily_cost" dynamic-update="true">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />          
+        </id>
+         <property name="clickSum" type="java.lang.Integer">
+            <column name="CLICKSUM" /> 
+        </property>
+        <property name="consumption" type="java.lang.Double">
+            <column name="CONSUMPTION" /> 
+        </property>
+        <property name="perDay" type="java.lang.String">
+            <column name="DATE" /> 
+        </property>       
+        <property name="createTime" type="java.util.Date">
+			<column name="CREATETIME" />
+		</property>
+    </class>
+</hibernate-mapping>

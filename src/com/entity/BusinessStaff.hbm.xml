@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.BusinessStaff" table="t_store_turnover">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="native" /> 
+        </id>
+         <property name="shop_name" type="java.lang.String">
+            <column name="SHOP_NAME" /> 
+        </property>
+        <property name="store_category" type="java.lang.String">
+            <column name="STORE_CATEGORY" /> 
+        </property>
+        <property name="month_date" type="java.lang.String">
+            <column name="MONTH_DATE" /> 
+        </property>
+        <property name="payment_amount" type="java.lang.String">
+            <column name="PAYMENT_AMOUNT" /> 
+        </property>
+        <property name="customer_price" type="java.lang.String">
+            <column name="CUSTOMER_PRICE" /> 
+        </property>
+        <property name="payments_number" type="java.lang.Integer">
+            <column name="PAYMENTS_NUMBER" /> 
+        </property>
+        <property name="create_time" type="java.util.Date">
+            <column name="CREATE_TIME" /> 
+        </property>
+         <property name="user_account" type="java.lang.String">
+            <column name="USER_ACCOUNT" /> 
+        </property>
+    </class>
+</hibernate-mapping>

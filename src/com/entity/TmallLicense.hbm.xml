@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-9 19:17:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.entity.TmallLicense" table="t_tmall_license">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="native" /> 
+        </id>
+         <property name="business_license_address" type="java.lang.String">
+            <column name="business_license_address" /> 
+        </property>
+        <property name="shop_link" type="java.lang.String">
+            <column name="shop_link" /> 
+        </property>
+        <property name="tmall_shop_name" type="java.lang.String">
+            <column name="tmall_shop_name" /> 
+        </property>
+        <property name="create_time" type="java.util.Date">
+            <column name="create_time" /> 
+        </property>
+       
+    </class>
+</hibernate-mapping>
